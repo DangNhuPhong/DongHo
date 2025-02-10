@@ -1,0 +1,82 @@
+body {
+  background: rgb(0, 0, 0);
+  margin: 100px;
+}
+
+header {
+  display: flex;
+  padding: 10px;
+  z-index: 1000;
+  justify-content: center;
+}
+
+@font-face {
+  font-family: "FX_LED";
+  src: url("fonts/FX-LED Bold.TTF");
+}
+
+@font-face {
+  font-family: "Hack";
+  src: url("fonts/Hack-Bold.ttf");
+}
+
+.digital-clock {
+  background-color: none;
+  color: #228068;
+  display: flex;
+  border-radius: 2rem;
+  user-select: none;
+  padding: 0 2rem;
+  border: 0.99rem solid #228068;
+}
+
+.week {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  color: #414141;
+  font-weight: bold;
+  font-family: "Hack";
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.week div {
+  margin: 0 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.week .active {
+  font-weight: bold;
+  color: #228068;
+}
+
+.time {
+  font-family: "FX_LED";
+}
+
+.GMT .location-info {
+  font-family: "Hack";
+  position: relative;
+  display: flex;
+  left: -210px;
+  opacity: 0.7;
+}
+
+.hour,
+.min,
+.dot {
+  display: inline-block;
+  font-size: 13rem;
+}
+
+.min {
+  display: math;
+}
+
+.invisible {
+  visibility: hidden;
+}
